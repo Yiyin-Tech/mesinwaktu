@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesinwaktu Nusantara</title>
+    <style>
+        /* Reset dasar agar tidak ada jarak putih di pinggir */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth; /* Membuat scroll terasa halus */
+        }
+
+        /* Kontainer untuk setiap bagian tampilan */
+        section {
+            min-height: 100vh; /* Tiap tampilan minimal setinggi layar */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #eee; /* Pembatas halus */
+        }
+
+        /* Menyesuaikan gambar agar responsif */
+        .tampilan-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Navigasi opsional agar mudah berpindah antar tampilan */
+        nav {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        nav a {
+            width: 12px;
+            height: 12px;
+            background: #333;
+            border-radius: 50%;
+            text-decoration: none;
+            opacity: 0.5;
+        }
+
+        nav a:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#tampilan1" title="Tampilan 1"></a>
+        <a href="#tampilan2" title="Tampilan 2"></a>
+        <a href="#tampilan3" title="Tampilan 3"></a>
+        <a href="#tampilan4" title="Tampilan 4"></a>
+    </nav>
+
+    <section id="tampilan1">
+        <img src="tampilan_1.png" alt="Tampilan 1" class="tampilan-img">
+    </section>
+
+    <section id="tampilan2">
+        <img src="tampilan_2.png" alt="Tampilan 2" class="tampilan-img">
+    </section>
+
+    <section id="tampilan3">
+        <img src="tampilan_3.png" alt="Tampilan 3" class="tampilan-img">
+    </section>
+
+    <section id="tampilan4">
+        <img src="tampilan_4.png" alt="Tampilan 4" class="tampilan-img">
+    </section>
+
+</body>
+</html>
