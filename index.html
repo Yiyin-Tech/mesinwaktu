@@ -5,34 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesinwaktu Nusantara</title>
     <style>
-        /* Reset dasar agar tidak ada jarak putih di pinggir */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth; /* Membuat scroll terasa halus */
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
         }
 
-        /* Kontainer untuk setiap bagian tampilan */
         section {
-            min-height: 100vh; /* Tiap tampilan minimal setinggi layar */
             width: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            border-bottom: 1px solid #eee; /* Pembatas halus */
+            align-items: flex-start; /* Agar gambar mulai dari atas */
+            background-color: white;
         }
 
-        /* Menyesuaikan gambar agar responsif */
         .tampilan-img {
-            max-width: 100%;
+            width: 100%;
+            max-width: 1200px; /* Batas lebar agar tidak pecah di layar besar */
             height: auto;
             display: block;
         }
 
-        /* Navigasi opsional agar mudah berpindah antar tampilan */
+        /* Navigasi titik di samping agar tetap bisa berpindah cepat */
         nav {
             position: fixed;
             right: 20px;
@@ -40,45 +36,41 @@
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
             z-index: 100;
         }
 
         nav a {
             width: 12px;
             height: 12px;
-            background: #333;
+            background: rgba(0,0,0,0.5);
             border-radius: 50%;
-            text-decoration: none;
-            opacity: 0.5;
         }
-
-        nav a:hover { opacity: 1; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#tampilan1" title="Tampilan 1"></a>
-        <a href="#tampilan2" title="Tampilan 2"></a>
-        <a href="#tampilan3" title="Tampilan 3"></a>
-        <a href="#tampilan4" title="Tampilan 4"></a>
+        <a href="#s1"></a>
+        <a href="#s2"></a>
+        <a href="#s3"></a>
+        <a href="#s4"></a>
     </nav>
 
-    <section id="tampilan1">
-        <img src="tampilan_1.png" alt="Tampilan 1" class="tampilan-img">
+    <section id="s1">
+        <img src="Tampilan_1.png" alt="Halaman 1" class="tampilan-img">
     </section>
 
-    <section id="tampilan2">
-        <img src="tampilan_2.png" alt="Tampilan 2" class="tampilan-img">
+    <section id="s2">
+        <img src="Tampilan_2.png" alt="Halaman 2" class="tampilan-img">
     </section>
 
-    <section id="tampilan3">
-        <img src="tampilan_3.png" alt="Tampilan 3" class="tampilan-img">
+    <section id="s3">
+        <img src="Tampilan_3.png" alt="Halaman 3" class="tampilan-img">
     </section>
 
-    <section id="tampilan4">
-        <img src="tampilan_4.png" alt="Tampilan 4" class="tampilan-img">
+    <section id="s4">
+        <img src="Tampilan_4.png" alt="Halaman 4" class="tampilan-img">
     </section>
 
 </body>
